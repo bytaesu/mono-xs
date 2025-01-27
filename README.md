@@ -19,4 +19,9 @@ While this setup enables deployment to multiple platforms, if you, like me, also
 
 <br/>
 
+You can attach your desired database stack and use it with this. (I use PostgreSQL)
+
+
 **Develop your ideas fast, ship them even faster🚀**
+
+[-Reference I used-](https://github.com/HelixHEX/fly-monorepo-demo)
