@@ -19,9 +19,47 @@ While this setup enables deployment to multiple platforms, if you, like me, also
 
 <br/>
 
+# Deployment Guide
+
+In this section, the process of deploying to the [Fly.io](https://fly.io) platform is briefly explained.
+
+### 1. Create Apps on Fly
+
+```sh
+fly apps create
+```
+### 2. Configure the fly.toml
+
+Refer to [Fly.io Docs](https://fly.io/docs/reference/configuration)
+
+The necessary details have been commented in each fly.toml file.
+
+### 3. Deploy
+
+```sh
+# Deploy a Single App
+
+fly deploy --config fly.your-fly-app-name.toml
+
+```
+
+```sh
+# Deploy All at Once
+# You need to specify the respective fly.toml file names in the fly.deploy.sh file.
+
+chmod +x fly.deploy.sh
+
+./fly.deploy.sh
+```
+
+<br/>
+
+# In closing
+
 You can attach your desired database stack and use it with this. (I use PostgreSQL)
 
+I prefer to avoid repetitive tasks and enjoy increasing productivity. I believe this repository will be very helpful for specific workflows.
 
 **Develop your ideas fast, ship them even faster🚀**
 
-[-Reference I used-](https://github.com/HelixHEX/fly-monorepo-demo)
+[> Reference I used](https://github.com/HelixHEX/fly-monorepo-demo)
